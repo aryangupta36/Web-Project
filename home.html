@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPO Market Dashboard</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="Check.css" /> <!-- Added -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <div class="title">
+        <h1>IPO Market Dashboard</h1>
+        <p>Comprehensive analysis of initial public offerings</p>
+      </div>
+
+      <!-- ✅ Changed from link to button -->
+      <button id="checkButton" class="account-btn">💼 Check</button>
+    </header>
+
+    <section class="stats-section">
+      <div class="stat-card"><h2>Upcoming IPOs</h2><p>5</p></div>
+      <div class="stat-card"><h2>Active IPOs</h2><p>2</p></div>
+      <div class="stat-card"><h2>Completed IPOs</h2><p>5</p></div>
+      <div class="stat-card"><h2>Avg First Day Return</h2><p class="positive">+1.43%</p></div>
+    </section>
+
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search IPOs..." />
+      <select id="sector">
+        <option>All Sectors</option>
+        <option>Technology</option>
+        <option>Healthcare</option>
+        <option>Finance</option>
+
+      </select>
+      <select id="status">
+        <option>Date (Latest)</option>
+        <option>Date (Oldest)</option>
+      </select>
+    </div>
+
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h3>IPO Activity Timeline</h3>
+        <canvas id="activityChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Sector Distribution</h3>
+        <canvas id="sectorChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>First Day Performance</h3>
+        <canvas id="performanceChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Market Cap Timeline</h3>
+        <canvas id="marketChart"></canvas>
+      </div>
+    </section>
+
+    <section class="ipo-table">
+      <h3>IPO Details</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Ticker</th>
+            <th>Date</th>
+            <th>Price Range</th>
+            <th>Market Cap</th>
+            <th>Sector</th>
+            <th>Status</th>
+            <th>Performance</th>
+          </tr>
+        </thead>
+        <tbody id="ipoTableBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <!-- ✅ Account Info Popup -->
+  <div id="accountPopup" class="account-popup">
+    <h3>My Portfolio</h3>
+    <p><strong>Balance:</strong> ₹1,25,000</p>
+    <p><strong>Invested in IPOs:</strong> ₹80,000</p>
+    <p><strong>Avg Return:</strong> +4.7%</p>
+    <p><strong>Pending Refunds:</strong> ₹3,500</p>
+  </div>
+
+  <script src="home.js"></script>
+  <script src="Check.js"></script> <!-- Added -->
+  
+</body>
+</html>

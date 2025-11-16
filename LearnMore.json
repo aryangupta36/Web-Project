@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ipo",
+    "title": "What is an IPO?",
+    "description": "An IPO (Initial Public Offering) is when a private company offers shares to the public for the first time, allowing investors to buy ownership.",
+    "details": "An IPO marks the transition of a private company to a public one. It allows investors to buy shares and provides capital to the company for expansion."
+  },
+  {
+    "id": "process",
+    "title": "How Does an IPO Work?",
+    "description": "Learn about the IPO process — from selecting underwriters to stock market listing.",
+    "details": "The IPO process involves hiring investment banks, filing documents with SEBI, marketing the issue, setting a price band, and finally listing the shares."
+  },
+  {
+    "id": "invest",
+    "title": "How to Invest in an IPO?",
+    "description": "Understand how retail investors can apply for IPOs through brokers and banks.",
+    "details": "Investors can apply using ASBA (Applications Supported by Blocked Amount) via their bank or broker account. After allotment, shares appear in the Demat account."
+  },
+  {
+    "id": "benefits",
+    "title": "Why Companies Go Public?",
+    "description": "Discover the key reasons why companies launch IPOs.",
+    "details": "Companies go public to raise capital, gain visibility, allow early investors to exit, and attract talent with stock-based compensation."
+  },
+  {
+    "id": "risks",
+    "title": "Risks of Investing in IPOs",
+    "description": "Learn the potential risks before investing in IPOs.",
+    "details": "IPOs can be risky due to limited historical data, volatile pricing, and market uncertainty. Always read the prospectus before investing."
+  },
+  {
+    "id": "allocation",
+    "title": "IPO Share Allotment Process",
+    "description": "How are IPO shares distributed among investors?",
+    "details": "Shares are allocated based on demand, category (retail/institutional), and SEBI rules. Oversubscription may lead to partial allotment or lottery-based distribution."
+  },
+  {
+    "id": "listing",
+    "title": "IPO vs Direct Listing",
+    "description": "Understand the key difference between traditional IPOs and direct listings.",
+    "details": "In an IPO, new shares are issued to raise capital, while in a direct listing, existing shares are sold without raising new funds. Direct listings avoid underwriting fees and are preferred by already well-known companies."
+  },
+  {
+    "id": "lockin",
+    "title": "Lock-in Period Explained",
+    "description": "Learn why promoters and early investors can’t sell shares immediately after an IPO.",
+    "details": "A lock-in period is a time frame (typically 6 months) after an IPO during which company insiders and early investors cannot sell their shares. This ensures market stability post-listing."
+  }
+]

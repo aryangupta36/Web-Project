@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPO Reviews</title>
+  <style>
+  body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(to bottom right, #e8eefc, #f9fcff);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 32px;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+#reviews-container {
+  width: 85%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.review {
+  background: white;
+  padding: 20px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  border: 1px solid #e4e6eb;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.25s ease-in-out;
+}
+
+.review:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.12);
+}
+
+.review h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.review small {
+  color: #666;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+  <h1>IPO Reviews</h1>
+  <div id="reviews-container">
+    <p>Loading reviews...</p>
+  </div>
+
+  <script>
+    async function loadReviews() {
+      const container = document.getElementById("reviews-container");
+      container.innerHTML = "<p>Loading reviews...</p>";
+
+      try {
+        const res = await fetch("/api/reviews");
+        const reviews = await res.json();
+
+        if (!reviews.length) {
+          container.innerHTML = "<p>No reviews available yet.</p>";
+          return;
+        }
+
+        container.innerHTML = reviews.map(r => `
+          <div class="review">
+            <h3>${r.name} ⭐ ${r.rating}/5</h3>
+            <p>${r.text}</p>
+            <small><b>IPO:</b> ${r.ipoRef}</small><br>
+            <small><i>${new Date(r.createdAt).toLocaleString()}</i></small>
+          </div>
+        `).join("");
+      } catch (err) {
+        container.innerHTML = "<p>Error loading reviews.</p>";
+      }
+    }
+
+    loadReviews();
+  </script>
+
+</body>
+</html>

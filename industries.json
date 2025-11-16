@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Artificial Intelligence",
+    "companies": 85,
+    "avgValue": "$280M",
+    "growth": "+315%",
+    "color": "#3f60d6",
+    "bg": "#e3e8fc"
+  },
+  {
+    "name": "HealthTech",
+    "companies": 62,
+    "avgValue": "$195M",
+    "growth": "+245%",
+    "color": "#da2259",
+    "bg": "#fae7ea"
+  },
+  {
+    "name": "Clean Energy",
+    "companies": 43,
+    "avgValue": "$340M",
+    "growth": "+180%",
+    "color": "#137c31",
+    "bg": "#e5f7e8"
+  }
+]

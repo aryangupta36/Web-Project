@@ -1,0 +1,604 @@
+body {
+  background: linear-gradient(to right, #dde6f9, #ece9ff);
+  margin: 0; 
+  padding: 0; 
+}
+
+.first-row {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 15px;                  
+  margin: 0;                 
+  padding: 15px 20px;
+  border: 1px solid #fefefe;  
+  border-radius: 0px;         
+  position: fixed;         
+  top: 0;                  
+  left: 0;                  
+  width: 100%;              
+  background-color: white;    
+  z-index: 1000;              
+}
+.tab-button.PreIPO span {  
+  animation: purpleBlue 5s infinite alternate;
+}
+
+@keyframes purpleBlue {
+  0% { color: #8a2be2; }  
+  100% { color: #2430d8; } 
+}
+
+.tab-button {
+  color: grey;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab-button.Discover {
+  margin-left: 5rem; 
+  color: grey;
+}
+
+.tab-button.PreIPO {
+  margin-left: 5rem; 
+  color: black;
+}
+
+.tab-button:hover {
+  color: black;
+  transition: color 0.7s ease;
+}
+
+.tab-button.SignIn {
+  color: black;
+  margin-left: 125px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.tab-button.SignIn:hover {
+  transform: translateY(-5px);  
+  background-color: #cfeafe;         
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.Started {
+  color: white;
+  background-color: rgb(27, 118, 246);
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.Background {
+  background: linear-gradient(to right, #dde6f9, #ece9ff);
+  min-height: 100vh;
+  padding: 20px;  
+}
+
+.content {
+  margin-top: 70px;
+  margin-left: 100px;
+  font-size: 1.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;           
+  align-items: flex-start;  
+  gap: 50px;               
+}
+
+.content-text {
+  font-size: 1.9rem;
+  line-height: 0.65;
+}
+
+.content-image {
+  position: relative;
+  top: 37px;
+}
+
+.Pic {
+  width: 500px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.Pic:hover {
+  transform: translateY(-10px);
+}
+
+.Opportunity {
+  font-size: 3.5rem;
+  font-weight: bold;
+  animation: purpleBlue 5s infinite alternate;
+}
+
+@keyframes purpleBlue {
+  0%   { color: #8a2be2; } 
+  100% { color: #2430d8; } 
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: grey;
+  max-width: 450px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none; 
+}
+
+.btn:hover{
+  transform: translateY(-5px);
+}
+
+.explore {
+  color: white;
+  background-color: rgb(27, 118, 246);
+  margin-left: 100px;
+}
+
+.learn {
+  background-color: #edf0fd   ;
+  color: black;
+  margin-left: 35px;
+  font-weight: bold;
+}
+
+.stats-section {
+  margin: 60px 0 0 100px;
+  padding: 30px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stats-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 18rem;
+}
+
+.stats-subtitle {
+  color: #676d7d;
+  font-size: 1.20rem;
+  margin-bottom: 28px;
+    margin-left: 17rem;
+
+}
+
+.stats-row {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto; 
+  margin-right: 100px;
+  padding-bottom: 10px; 
+}
+
+.stats-card {
+  background: #e6ebff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(200,220,255,0.13);
+  padding: 32px 27px 25px 27px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-icon {
+  background: rgb(110, 164, 240);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  margin-bottom: 19px;
+}
+
+.stats-value {
+  color: #6b50ed;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stats-label {
+  font-size: 1.16rem;
+  font-weight: bold;
+  color: #252945;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.stats-desc {
+  color: #7d8ca3;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+ 
+  .stats-row {
+    gap: 25px;
+    margin-right: 0;
+  }
+  .stats-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.featured-section {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+  padding:25px;
+}
+.featured-title {
+  font-size: 2.4rem;
+   font-weight: bold;
+    text-align: center;
+     margin-bottom: 8px;
+}
+.featured-desc {
+  color: #61667c;
+   font-size: 1.5rem; 
+   text-align: center; 
+   margin-bottom: 40px;
+}
+.companies-row {
+  display: flex;
+   gap: 22px; 
+   flex-wrap: wrap; 
+   justify-content: center;
+}
+.company-card {
+  background: #f7faff;
+  border-radius: 13px;
+  box-shadow: 0 2px 12px #d6e6ff12;
+  width: 305px; min-height: 235px;
+  padding: 22px 22px 18px 22px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+.company-logo {
+  background: #dde6f9; color: #6b50ed; 
+  border-radius: 50%; font-size: 1.1rem; font-weight: bold;
+  width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px;
+}
+.company-header {
+  display: flex; align-items: center; gap: 7px; font-size: 1.04rem; font-weight: bold; margin-bottom: 7px;
+}
+.badge {
+  font-size: 0.77rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 11px;
+  margin-left: 2px;
+}
+.hot { background: #ff4b4b; color: white; }
+.series { background: #cfeafe; color: #535353; }
+.company-location, .company-desc {
+  font-size: 0.98rem; color: #5e60a8; margin-bottom: 5px;
+}
+.company-desc { color: #26315d; }
+.company-stats {
+  display: flex; align-items: center; gap: 12px; margin: 8px 0 14px 0; font-size: 0.97rem;
+}
+.stat-value { color: #6b50ed; font-weight: bold; }
+.stat-label { color: #7d8ca3; }
+.stat-growth { color: #19ac56; font-weight: bold; }
+.details-btn {
+  border: none; border-radius: 8px; padding: 9px 0; font-size: 1rem;
+  background-color: #2679fb; color: white; cursor: pointer; font-weight: bold; box-shadow: 0 2px 8px #c1dafb34;
+  margin-top: auto;
+  width: 100%;
+}
+.view-all-btn {
+  display: block;
+  background: #1b76f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.04rem;
+  padding: 12px 26px;
+  font-weight: bold;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #c1dafb44;
+}
+.view-all-btn:hover { background: #5021bf; }
+@media (max-width: 1200px) {
+  .main-section, .stats-section, .featured-section { max-width: 98vw; margin-left: 0; margin-right: 0;}
+}
+@media (max-width: 900px) {
+  .main-section { flex-direction: column; align-items: flex-start; }
+  .main-image-area {
+  width: 100%;
+  height: auto;
+}
+  .companies-row { flex-direction: column; align-items: center; }
+}
+@media (max-width: 650px) {
+  .navbar { flex-direction: column; align-items: flex-start; padding: 8px 10px; }
+  .nav-links { gap: 15px; }
+  .main-section, .stats-section, .featured-section { padding: 0 5px; }
+}
+.industries-section {
+  margin: 70px 0 0 0; padding: 0 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.industries-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.industries-desc {
+  color: #757581;
+  font-size: 1.11rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.industries-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.industry-card {
+  background: #f5f7fb;
+  border-radius: 17px;
+  box-shadow: 0 2px 14px rgba(160,185,255,0.11);
+  width: 400px;
+  padding: 23px 20px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.industry-head {
+  display: flex; align-items: center; gap: 9px; margin-bottom: 17px;
+}
+.industry-icon {
+  width: 43px; height: 43px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.55rem; font-weight: bold;
+}
+.industry-name { font-size: 1.16rem; font-weight: bold; color: #283a50; }
+.industry-hot {
+  background: #ff4d4d; color: white; border-radius: 8px;
+  font-size: .81rem; font-weight: bold;
+  padding: 2px 10px; margin-left: 8px;
+}
+.industry-stats {
+  display: flex; gap: 40px; margin-bottom: 13px; margin-left: 2px; margin-top: 10px;
+}
+.industry-main { font-weight: bold; color: #273771; font-size: 1.13rem; }
+.industry-growth { color: #13bc4b; font-weight: bold; font-size: 1.05rem; }
+.industry-btn {
+  border: none; border-radius: 8px; padding: 8px 0;
+  font-size: 1rem; font-weight: 500;
+  background-color: #2367ec;
+  color: white; width: 100%; cursor: pointer;
+  margin-top: 10px; margin-bottom: 2px;
+  box-shadow: 0 2px 7px #bcd5f844;
+  transition: background 0.2s;
+}
+.industry-btn:hover { background: #5021bf; }
+.industry-viewall {
+  display: block; margin: 12px auto 0 auto;
+  background: #fff;
+  color: #252945;
+  border: 1px solid #dae7ff;
+  border-radius: 7px;
+  font-size: 1.02rem;
+  padding: 8px 28px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px #e1ebff55;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.industry-viewall:hover { background: #eaf3ff; }
+@media (max-width:1100px){
+  .industries-row{flex-direction:column; align-items:center; gap:20px;}
+  .industry-card{width:94vw; max-width:420px;}
+}
+
+.investment-discovery {
+  display: flex;
+  justify-content: space-between;
+  background: #edf0fd;
+  border-radius: 18px;
+  padding: 40px;
+  margin: 70px auto 50px auto;
+  max-width: 1100px;
+  box-shadow: 0 8px 40px #d1dbf9b2;
+}
+
+.investment-text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.investment-text h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.investment-text p {
+  color: #767f95;
+  margin-bottom: 24px;
+  font-size: 1.15rem;
+}
+
+.investment-text ul {
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.investment-text li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 22px;
+  font-size: 1.07rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #1b76f6;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #5021bf;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: black;
+  border: 1px solid #ced2de;
+}
+.ipo-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  letter-spacing: 0.3px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.ipo-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
+}
+
+.ipo-btn:active {
+  transform: scale(0.97);
+}
+
+.btn.secondary:hover {
+  background-color: #eceff8;
+}
+
+.investment-text small {
+  color: #5c6076;
+  font-size: 0.82rem;
+}
+
+.investment-image {
+  flex: 1.1;
+  position: relative;
+}
+
+.investment-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 9px 30px rgba(80,91,130,0.15);
+}
+
+.ipo-alert {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(5px);
+  border-radius: 11px;
+  padding: 8px 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 3px 13px rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 20px auto 50px auto;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.91rem;
+  color: #545c7e;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+  color: #3f4a91;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 7px;
+}
+
+.footer-column ul li a {
+  color: #6c7399;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #1b76f6;
+}
+
+.footer-column p {
+  max-width: 220px;
+  margin: 0 0 8px 0;
+}
+
+.social-icons a {
+  font-size: 1.45rem;
+  margin-right: 8px;
+  color: #7f8cb6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #1b76f6;
+}

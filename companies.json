@@ -1,0 +1,26 @@
+[
+  {
+    "name": "NeuralTech AI",
+    "location": "San Francisco, CA",
+    "valuation": "$450M",
+    "growth": "+285%",
+    "stage": "Series B",
+    "desc": "Advanced AI/ML platform for enterprise."
+  },
+  {
+    "name": "GreenEnergy Solutions",
+    "location": "Austin, TX",
+    "valuation": "$320M",
+    "growth": "+180%",
+    "stage": "Series A",
+    "desc": "Revolutionary solar tech with 40% efficiency."
+  },
+  {
+    "name": "QuantumSecure",
+    "location": "Seattle, WA",
+    "valuation": "$220M",
+    "growth": "+300%",
+    "stage": "Series C",
+    "desc": "Next-gen quantum cybersecurity platform."
+  }
+]
